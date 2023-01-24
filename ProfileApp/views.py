@@ -42,4 +42,4 @@ def ShowMyData(request):
    context ={'name':name,'nickname':nickname,'age':age,'BloodGroup':BloodGroup,'occupation':occupation,
              'country':country,'Rolemadel':Rolemadel,'hobby':hobby,'talent': talent,
              'FavoriteFlowers': FavoriteFlowers,'products': products,}
-   return render(request,'ShowMyData.html',context)
+   return render(request, 'ShowMyData.html', context)
