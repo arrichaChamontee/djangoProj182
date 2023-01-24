@@ -1,0 +1,30 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row row-cols-1 row-cols-md-3 g-2">
+        <div class="col">
+            <div class="card h-100 bg-dark text-light border-0">
+                <div class="card-header">
+                    <h3 class="card-title mb-1 text-center">Model</h3>
+                </div>
+                <img src="{% static 'images/car1.jpg' %}" class="rounded" alt="...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 bg-dark text-light border-0">
+                <div class="card-header">
+                    <h3 class="card-title mb-1 text-center">Beauty Queen</h3>
+                </div>
+                <img src="{% static 'images/car2.jpg' %}" class="rounded" alt="...">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 bg-dark text-light border-0">
+                <div class="card-header">
+                    <h3 class="card-title mb-1 text-center">Graphic Designer</h3>
+                </div>
+                <img src="{% static 'images/car3.jpg' %}" class="rounded" alt="...">
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <div class="card-group h-auto">
+        <div class="card bg-dark text-light border-0">
+            <img src="{% static 'images/edu1.jpg' %}" class="card-img-top w-100" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Rajamangala University of Technology Isan Khon Kaen Campus</h5>
+                <h6 class="card-subtitle mb-1 text-light-emphasis">Bachelor's degree</h6>
+                <h6 class="card-subtitle mb-2 text-success">2022 - Current</h6>
+                <ul>
+                    <li>Currently studying in a bachelor's degree program on transfer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card bg-dark text-light border-0">
+            <img src="{% static 'images/edu2.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nongbualamphu Technical College</h5>
+                <h6 class="card-subtitle mb-1 text-light-emphasis">High Vocational Certificate</h6>
+                <h6 class="card-subtitle mb-2 text-light-emphasis">2020 - 2021</h6>
+                <ul>
+                    <li>College representative invention contest (2021)</li>
+                    <li>Provincial representative in the professional academic skills competition of network technology (2021)</li>
+                    <br>
+                </ul>
+                <hr>
+                <h6 class="card-subtitle mb-1 text-light-emphasis">Internship at Buriram Rajabhat University</h6>
+                <p class="card-text">Maintain and repair hardware-software, data maintenance</p>
+            </div>
+        </div>
+        <div class="card bg-dark text-light border-0">
+            <img src="{% static 'images/edu3.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nongbualamphu Technical College</h5>
+                <h6 class="card-subtitle mb-1 text-light-emphasis">Vocational Certificate</h6>
+                <h6 class="card-subtitle mb-2 text-light-emphasis">2017 - 2019</h6>
+                <ul>
+                    <li>Provincial representative in the professional academic skills competition of Thai national history (2017 - 2019)</li>
+                    <li>Provincial representative in basketball skills competition (2018 - 2019)</li>
+                </ul>
+                <hr>
+                <h6 class="card-subtitle mb-1 text-light-emphasis">Internship at Buriram Railway Station</h6>
+                <p class="card-text">Update train schedule information, store cargo information.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arricha</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'stylesheet/bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="{% static 'stylesheet/fontawesome/css/all.css' %}" rel="stylesheet">
+    <script src="{% static 'stylesheet/bootstrap/js/bootstrap.js' %}"></script></head>
+<body class="bg-dark text-light">
+<div class="m-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'Home' %}">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="location" href="{% url 'Home' %}">
+                            <i class="bi bi-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="location" href="{% url 'Profile' %}">
+                            <i class="bi bi-person-square" style="color: #9963bf"></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="location" href="{% url 'Education' %}">
+                            <i class="bi bi-mortarboard" style="color: deeppink"></i>
+                            Education
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="location" href="{% url 'Attention' %}">
+                            <i class="bi bi-clipboard2-heart text-success"></i>
+                            Attention
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="location" href="{% url 'Career' %}">
+                            <i class="bi bi-journal-code text-warning" style="color: deeppink"></i>
+                            Career
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="location" href="{% url 'RoleModel' %}">
+                            <i class="bi bi-person-heart text-danger"></i>
+                            Role Model
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="location" href="{% url 'ShowMyData' %}">
+                            <i class="bi bi-person-heart text-danger"></i>
+                            ShowMyData
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="m-3">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>

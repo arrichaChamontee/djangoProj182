@@ -1,0 +1,27 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-2 h-50">
+            <img src="{% static 'images/rm1.jpg' %}"
+                 class="img-fluid rounded-circle" alt="...">
+        </div>
+        <div class="col-md-10">
+            <h2 class="text-danger">Kendall Jenner</h2>
+            <p class="lead">
+                Kendall Nicole Jenner (born November 3, 1995)[3] is an American model, media personality,<br>
+                and socialite. She is a daughter of Kris Jenner and Caitlyn Jenner, and rose to fame in <br>
+                the reality television show Keeping Up with the Kardashians. Jenner began modelling at <br>
+                the age of 14. After working in commercial print ad campaigns and photoshoots, <br>
+                she had breakout seasons in 2014 and 2015, walking the runways for high-fashion designers during <br>
+                the New York, Milan, and Paris fashion weeks. Jenner has appeared in campaigns, editorials, <br>
+                and cover shoots for LOVE and various international Vogue editions, and is a brand ambassador <br>
+                for Estée Lauder.[4] Jenner made her debut at No. 16 on Forbes magazine's 2015 list <br>
+                of top-earning models, with an estimated annual income of US$4 million.[5] In 2017 Jenner <br>
+                was named the world's highest-paid model by Forbes, ousting model Gisele Bündchen <br>
+                who had been leading the list since 2002.[6]<br> </p>
+        </div>
+    </div>
+    <hr>
+    <img src="{% static 'images/rm2.webp' %}" class="img-fluid rounded-3 w-100" alt="...">
+{% endblock %}

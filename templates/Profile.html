@@ -1,0 +1,66 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{% static 'images/profile.jpg' %}" class="card-img-top object-fit-cover rounded w-100 h-auto" alt="...">
+            <div class="mt-1 mb-1 p-3 border border-2 border-dark rounded h-auto">
+                <h4>MOTTO</h4>
+                <p>
+                    <b></b>“Life isn’t about finding yourself. Life is about creating yourself.”
+                </p>
+            </div>
+        </div>
+        <div class="col-md-9 ps-md-0">
+            <div class="bg-dark text-light rounded p-3 h-auto">
+                <h2>Profile</h2>
+                <p>Hi, my name is Arricha Chamontee. When I was young, I had a dream like everyone else, but it was not clear... until now It's a career that works with technology.</p>
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><strong>Full Name :</strong> <span>Arricha Chamontee</span></li>
+                            <li><strong>Nick Name :</strong> <span>nut</span></li>
+                            <li><strong>Date of Birth :</strong> <span>12 July 2001</span></li>
+                            <li><strong>Race :</strong> <span>Thai</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><strong>Weight :</strong> <span>50</span></li>
+                            <li><strong>Height :</strong><span>165</span></li>
+                            <li><strong>MBTI :</strong> <span>ESFJ</span></li>
+                            <li><strong>Blood Type :</strong> <span>B</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>Since I can remember, i like to play games, Job from friends or surf the internet. But sometimes I can't keep up with the world. And that's why I Love it. because I learned a lot from technology.
+                <hr>
+                <h2>Hobby</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Draw a picture</li>
+                            <li>Listen to music</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>see beauty queen</li>
+                            <li>look at models</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p class="display-2">Thank you for coming to see.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        WEDNESDAY of <cite title="Source Title">Netflix</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+{% endblock %}

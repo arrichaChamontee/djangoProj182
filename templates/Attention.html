@@ -1,0 +1,38 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row g-2" style="margin: 5%">
+        <div class="col-md-3">
+            <div class="card h-100 bg-dark text-light border-0">
+                <img src="{% static 'images/at1.jpg' %}" class="card-img-top object-fit-cover" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Model, beauty queen</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-10 bg-dark bg-success text-light border-0">
+                <img src="{% static 'images/at2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cosmetics</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 bg-dark text-light border-0">
+                <img src="{% static 'images/at3.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Art</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card h-100 bg-dark text-light border-0">
+                <img src="{% static 'images/at4.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Dog</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
