@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load fontawesome_5 %}
+{% fontawesome_5_static %}
+{% block content %}
+    <h1 class="text-white text-center bg-secondary">All Product Information</h1>
+    <table class="table table-info">
+        <tr>
+            <th>รหัสสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ยี่ห้อ</th>
+            <th>รุ่น</th>
+            <th>ราคาต่อหน่อย</th>
+            <th>จำนวนคงเหลือ</th>
+            <th>ประเภท</th>
+            <th>Manage
+                <a href="{% url 'createProduct' %}">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </th>
+        </tr>
+
+        {% for goods in goods %}
+            <tr>
+                <td>{{ goods.gid }}</td>
+                <td>{{ goods.name }}</td>
+                <td>{{ goods.brand }}</td>
+                <td>{{ goods.model1 }}</td>
+                <td>{{ goods.price }}</td>
+                <td>{{ goods.net }}</td>
+                <td>{{ goods.goodscategory.name }}</td>
+                <td>
+                    <a href="{% url 'retieveOneProduct' product.pid %}">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="{% url 'updateProduct' product.pid %}">
+                        <i class="fas fa-tools"> </i>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+    <div class="col col-6 text-lg-start">
+        <a href="{% url 'home' %}" class="btn btn-primary">
+            {% fa5_icon 'fas fa-home' %}&nbsp Home
+        </a>
+
+    </div>
+{% endblock %}
